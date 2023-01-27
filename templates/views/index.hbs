@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+    <link class="icon" rel="icon" href="/weather">
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+
+
+
+    {{>header}}
+    <form class="container"
+        style="width:50%;display:flex;flex-direction:column;margin:0px auto;border:1px solid black;background-color:bisque;border-radius:10px; height:20vh">
+
+        <input style="width:50%;margin:10px auto" placeholder="enter location to search result">
+        <button style="width:50%;margin:10px auto">search</button>
+
+    </form>
+    <div class="container"style="height:50vh">
+
+        <div id="message-1">
+            {{!-- <p id="message-1"></p>
+            <p id="message-2"></p> --}}
+        </div>
+        <div id="message-2"style="height:100%">
+
+        </div>
+    </div>
+    {{>footer}}
+
+    
+    <script src="index.js"></script>
+</body>
