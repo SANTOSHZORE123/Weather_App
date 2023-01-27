@@ -6,7 +6,7 @@ const mapbox = require('./using_request_npm_package/geocode')
 const forecast = require('./using_request_npm_package/forecast')
 
 const app=express()
-
+const port=process.env.PORT || 3000
 
 
 //define paths for express routing
@@ -90,7 +90,7 @@ app.get('*',(req,res)=>{
     res.render('error_page',
     {'message':'page not found'});
 })
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log('running on port no 8000')
 })
 

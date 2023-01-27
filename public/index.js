@@ -45,7 +45,7 @@ form.addEventListener('submit',(e)=>{
     const location=search.value;
     message_one.innerHTML=`<h4>please wait</h4>`;
     message_two.innerHTML=``
-    fetch(`http://localhost:8000/weathers?search=${location}`).then((response)=>{
+    fetch(`/weathers?search=${location}`).then((response)=>{
         response.json().then((data)=>{
             if(data.error!==undefined){
                 message_one.innerHTML=`<h4>please provide valid address</h4>`
