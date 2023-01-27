@@ -55,16 +55,16 @@ form.addEventListener('submit',(e)=>{
                 message_one.innerHTML=``
                 message_two.innerHTML=`
                 <div class="main"
-        style="width:50%;margin:10px auto 0px auto;border:2px solid black;border-radius:15px;background-image:url(weat.jpg);background-color:white;background-size:auto;background-repeat:no-repeat;height:100%;color:black">
-        <div class="weathericon"style="margin-top:10px">
+        style="width:50%;margin:10px auto 0px auto;border:2px solid black;border-radius:15px;background-image:url(weat.jpg);background-color:white;background-size:cover;background-repeat:no-repeat;height:100%;color:black">
+        <div class="weathericon"style="margin:25px auto">
             <img src=${data.current.weather_icons[0]} style="border:1px solid orange;border-radius:15px">
         </div>
         <div class="info">
-            <h2 class="location"><i class="fa-solid fa-street-view"></i>${data.location.name},${data.location.country}</h2>
-            <p class="date">${data.location.localtime}</p>
-            <h3 class="temp">Temperature: ${data.current.temperature}°C</h3>
-            <h3 class="tempmin_max">Status: ${data.current.weather_descriptions[0]}</h3>
-            <h3> Wind Speed:${data.current.wind_speed}</h3>
+            <h2 class="location"style="margin:32px 0px"><i class="fa-solid fa-street-view"></i>${data.location.name},${data.location.country}</h2>
+            <p class="date"style="margin:32px 0px">${data.location.localtime}</p>
+            <h3 class="temp"style="margin:32px 0px">Temperature: ${data.current.temperature}°C</h3>
+            <h3 class="tempmin_max"style="margin:32px 0px">Status: ${data.current.weather_descriptions[0]}</h3>
+            <h3 style="margin:32px 0px"> Wind Speed:${data.current.wind_speed}</h3>
         </div>
     </div>`
             }
