@@ -55,7 +55,7 @@ form.addEventListener('submit',(e)=>{
                 message_one.innerHTML=``
                 message_two.innerHTML=`
                 <div class="main"
-        style="width:50%;margin:10px auto 0px auto;border:2px solid black;border-radius:15px;background-image:url(weat.jpg);background-color:white;background-size:auto no-repeat;height:100%;color:black">
+        style="width:50%;margin:10px auto 0px auto;border:2px solid black;border-radius:15px;background-image:url(weat.jpg);background-color:white;background-size:auto;background-repeat:no-repeat;height:100%;color:black">
         <div class="weathericon"style="margin-top:10px">
             <img src=${data.current.weather_icons[0]} style="border:1px solid orange;border-radius:15px">
         </div>
