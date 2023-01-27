@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start":"node src/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.2.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
     "window": "^4.2.7"
   }
 }
