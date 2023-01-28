@@ -10,7 +10,7 @@ const request = require('request')
 const forecast=({lattitude,longitude,placename}={},callback) => {
     
     /* use "units=s" for kelvin,"units=f" for fareinheight,"units=m" for celcius.*/
-    let url = `http://api.weatherstack.com/current?access_key=98f1f06e4f150345a5d1cbd9713d260b&query=${lattitude},${longitude}&units=m`;
+    let url = `http://api.weatherstack.com/current?access_key=fd10b87c9c02cd168f5a724ec6f6ce62&query=${lattitude},${longitude}&units=m`;
    
     /* for automating parsig pass one json:true opion to get parsed data.*/
      request({ url, json: true }, (error, response) => {
